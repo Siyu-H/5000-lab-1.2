@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Introduction to some other distributions",
+    "section": "",
+    "text": "The exponential distribution models the time between events in a Poisson process, where events occur continuously and independently at a constant average rate. It is often used to model waiting times, such as the time between arrivals at a queue.\n\n\nThe PDF of an exponential distribution is: \\[\nf(x; \\lambda) = \\lambda e^{-\\lambda x},x \\geq 0\n\\]\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.\n\nfrom scipy.stats import expon\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nlambda_val = 1\nx = np.linspace(0, 10, 1000)\ny = lambda_val * np.exp(-lambda_val * x)\n\nplt.plot(x, y)\nplt.title('Exponential Distribution')\nplt.xlabel('Time')\nplt.ylabel('Probability Density')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "about.html#probability-density-function",
+    "href": "about.html#probability-density-function",
+    "title": "Introduction to some other distributions",
+    "section": "",
+    "text": "The PDF of an exponential distribution is: \\[\nf(x; \\lambda) = \\lambda e^{-\\lambda x},x \\geq 0\n\\]\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.\n\nfrom scipy.stats import expon\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nlambda_val = 1\nx = np.linspace(0, 10, 1000)\ny = lambda_val * np.exp(-lambda_val * x)\n\nplt.plot(x, y)\nplt.title('Exponential Distribution')\nplt.xlabel('Time')\nplt.ylabel('Probability Density')\nplt.grid(True)\nplt.show()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to different probability distributions in Statistics",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#section-1-normal-distribution",
+    "href": "index.html#section-1-normal-distribution",
+    "title": "Introduction to different probability distributions in Statistics",
+    "section": "Section 1: Normal Distribution ",
+    "text": "Section 1: Normal Distribution \nThe normal distribution is one of the most common probability distributions in statistics. It is a continuous distribution defined by its mean \\(\\mu\\) standard deviation \\(\\sigma\\). The normal distribution is symmetric around the mean.\n\nSubsection 1.1: Details \nProbability Density Function:\n\\[\nf(x) = \\frac{1}{\\sigma \\sqrt{2 \\pi}} \\exp \\left( - \\frac{(x - \\mu)^2}{2 \\sigma^2} \\right)\n\\]\n\nWhere:\n\n\n\n\\(\\mu\\) is the mean\n\n\n\\(\\sigma\\) is the standard deviation\n\n\nIt is also central to the Central Limit Theorem.1"
+  },
+  {
+    "objectID": "index.html#section-2-poisson-distribution",
+    "href": "index.html#section-2-poisson-distribution",
+    "title": "Introduction to different probability distributions in Statistics",
+    "section": "Section 2: Poisson Distribution",
+    "text": "Section 2: Poisson Distribution\n\n\nDefinition of the Poisson Distribution:\n\nThe Poisson distribution models the number of events occurring in a fixed interval of time or space. It assumes that these events happen at a constant rate and independently of each other.\n\n\nApplications of the Poisson Distribution:\n\nIt is commonly used to model phenomena such as the number of phone calls received in an hour."
+  },
+  {
+    "objectID": "index.html#section-3-feature-comparison-table",
+    "href": "index.html#section-3-feature-comparison-table",
+    "title": "Introduction to different probability distributions in Statistics",
+    "section": "Section 3: Feature Comparison Table",
+    "text": "Section 3: Feature Comparison Table\n\n\n\n\n\n\n\n\nDistribution\nDescription\nParameters\n\n\n\n\nNormal\nModels continuous data, symmetric around the mean.\nMean \\(\\mu\\), Standard Deviation \\(\\sigma\\)\n\n\nPoisson\nModels the count of events in a fixed interval.\nRate \\(\\mu\\)\n\n\n\nThe probability density function of the normal distribution is given by: \\(f(x) = \\frac{1}{\\sigma \\sqrt{2 \\pi}} \\exp \\left( - \\frac{(x - \\mu)^2}{2 \\sigma^2} \\right)\\) , while The probability mass function of the Poisson distribution is given by: \\(P(X = k) = \\frac{\\lambda^k e^{-\\lambda}}{k!}\\)\n\nThe normal distribution is continuous and models variables like height or temperature with a symmetric, bell-shaped curve, while the Poisson distribution is discrete and models the number of events occurring in a fixed interval, like the number of calls received per hour."
+  },
+  {
+    "objectID": "index.html#section-4-feature-comparison-images",
+    "href": "index.html#section-4-feature-comparison-images",
+    "title": "Introduction to different probability distributions in Statistics",
+    "section": "Section 4: Feature Comparison Images",
+    "text": "Section 4: Feature Comparison Images"
+  },
+  {
+    "objectID": "index.html#section-5-introduction-to-different-distributions-video",
+    "href": "index.html#section-5-introduction-to-different-distributions-video",
+    "title": "Introduction to different probability distributions in Statistics",
+    "section": "Section 5: Introduction to Different Distributions (Video)",
+    "text": "Section 5: Introduction to Different Distributions (Video)"
+  },
+  {
+    "objectID": "index.html#mermaid-diagram",
+    "href": "index.html#mermaid-diagram",
+    "title": "Introduction to different probability distributions in Statistics",
+    "section": "Mermaid Diagram",
+    "text": "Mermaid Diagram\n\n\n\n\n\ngraph TD;\n   A[Probability Distributions] --&gt; B[Normal Distribution];\n   A --&gt; C[Poisson Distribution];\n   B --&gt; D[Continuous Distribution];\n   B --&gt; E[Defined by Mean and Standard Deviation];\n   B --&gt; F[Symmetric Bell-Shaped Curve];\n   B --&gt; G[Models natural phenomena like height, test scores];\n   C --&gt; H[Discrete Distribution];\n   C --&gt; I[Defined by Rate Parameter];\n   C --&gt; J[Asymmetric, Skewed Distribution];\n   C --&gt; K[Models rare events like the number of phone calls in an hour];\n\n\n\n\n\n\nMore information about different distributions can be found in (Dube et al. 2020)"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Introduction to different probability distributions in Statistics",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nCentral Limit Theorem states that the sum of many independent and identically distributed random variables tends to be normally distributed, regardless of their original distribution.↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#basic-information",
+    "href": "slides/slides.html#basic-information",
+    "title": "Introduction to Binomial Distribution",
+    "section": "Basic Information",
+    "text": "Basic Information\n\nTheory:\n\n\nThe binomial distribution describes the number of successes in a fixed number of independent trials, each with the same probability of success. It is a discrete distribution and is commonly used to model scenarios like flipping a coin or answering multiple-choice questions."
+  },
+  {
+    "objectID": "slides/slides.html#equations-and-graphs",
+    "href": "slides/slides.html#equations-and-graphs",
+    "title": "Introduction to Binomial Distribution",
+    "section": "Equations and Graphs",
+    "text": "Equations and Graphs\nProbability Mass Function: \\[\nP(X = k) = \\binom{n}{k} p^k (1 - p)^{n - k}\n\\]\nAn example of binomial distribution plot:"
+  },
+  {
+    "objectID": "slides/slides.html#other-information",
+    "href": "slides/slides.html#other-information",
+    "title": "Introduction to Binomial Distribution",
+    "section": "Other Information",
+    "text": "Other Information\n\n\nA more detailed explanation of binomial distribution can be found in (Jacobs and Archie 2008).\n\n\n\n\n\n\n\n\n\nJacobs, Jeff, and Tim Archie. 2008. “Investigating Sense of Community in First-Year College Students.” Journal of Experiential Education 30 (3): 282–85."
+  }
+]

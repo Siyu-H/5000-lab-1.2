@@ -1,0 +1,93 @@
+---
+title: "Introduction to different probability distributions in Statistics"
+bibliography: reference.bib
+mermaid:
+  theme: default
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+---
+toc: true
+toc-title: "Table of Contents"
+---
+
+# Basic Information  <!-- h1 header -->
+Common probability distributions include the Normal Distribution, Binomial Distribution, Poisson Distribution, Exponential Distribution, and Uniform Distribution. 
+
+## Section 1: Normal Distribution   <!-- h2 header -->
+The normal distribution is one of the most common probability distributions in statistics. It is a continuous distribution defined by its mean $\mu$ standard deviation $\sigma$. The normal distribution is symmetric around the mean.
+
+### Subsection 1.1: Details <!-- h3 header -->
+
+Probability Density Function:
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left( - \frac{(x - \mu)^2}{2 \sigma^2} \right)
+$$
+
+<p>Where:</p>
+<ul>
+  <li> $\mu$ is the mean</li>
+  <li> $\sigma$ is the standard deviation</li>
+</ul>
+
+It is also central to the Central Limit Theorem.[^1]
+
+[^1]: Central Limit Theorem states that the sum of many independent and identically distributed random variables tends to be normally distributed, regardless of their original distribution.
+
+
+## Section 2: Poisson Distribution
+
+::: {.columns}
+::: {.column width="60%"}
+**Definition of the Poisson Distribution**: 
+<p>The Poisson distribution models the number of events occurring in a fixed interval of time or space. It assumes that these events happen at a constant rate and independently of each other.</p>
+:::
+
+::: {.column width="40%"}
+**Applications of the Poisson Distribution**: 
+<p>It is commonly used to model phenomena such as the number of phone calls received in an hour.</p>
+:::
+:::
+
+
+## Section 3: Feature Comparison Table
+
+| Distribution | Description | Parameters |
+|--------------|-------------|-------------|
+| Normal  | Models continuous data, symmetric around the mean.       | Mean $\mu$, Standard Deviation $\sigma$   |
+| Poisson    | Models the count of events in a fixed interval.        | Rate $\mu$    |
+
+The probability density function of the normal distribution is given by: $f(x) = \frac{1}{\sigma \sqrt{2 \pi}} \exp \left( - \frac{(x - \mu)^2}{2 \sigma^2} \right)$ , while The probability mass function of the Poisson distribution is given by: $P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}$
+
+> The normal distribution is continuous and models variables like height or temperature with a symmetric, bell-shaped curve, while the Poisson distribution is discrete and models the number of events occurring in a fixed interval, like the number of calls received per hour.
+
+## Section 4: Feature Comparison Images
+
+![First Image](./images/Normal Distribution.png)
+![Second Image](./images/Poisson Distribution.png)
+
+## Section 5: Introduction to Different Distributions (Video)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V3Qxj2C7rP0" allowfullscreen></iframe>
+
+## Mermaid Diagram
+
+```{mermaid}
+graph TD;
+   A[Probability Distributions] --> B[Normal Distribution];
+   A --> C[Poisson Distribution];
+   B --> D[Continuous Distribution];
+   B --> E[Defined by Mean and Standard Deviation];
+   B --> F[Symmetric Bell-Shaped Curve];
+   B --> G[Models natural phenomena like height, test scores];
+   C --> H[Discrete Distribution];
+   C --> I[Defined by Rate Parameter];
+   C --> J[Asymmetric, Skewed Distribution];
+   C --> K[Models rare events like the number of phone calls in an hour];
+```
+
+More information about different distributions can be found in [@dube2020monopsony]

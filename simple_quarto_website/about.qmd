@@ -1,0 +1,34 @@
+---
+title: Introduction to some other distributions
+jupyter: python3
+---
+
+# Topic: Exponential Distribution
+The exponential distribution models the time between events in a Poisson process, where events occur continuously and independently at a constant average rate. It is often used to model waiting times, such as the time between arrivals at a queue.
+
+## Probability Density Function
+The PDF of an exponential distribution is:
+$$ 
+f(x; \lambda) = \lambda e^{-\lambda x},x \geq 0
+$$
+
+### Plot of the Exponential Distribution
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.
+
+```{python}
+from scipy.stats import expon
+import numpy as np
+import matplotlib.pyplot as plt
+
+lambda_val = 1
+x = np.linspace(0, 10, 1000)
+y = lambda_val * np.exp(-lambda_val * x)
+
+plt.plot(x, y)
+plt.title('Exponential Distribution')
+plt.xlabel('Time')
+plt.ylabel('Probability Density')
+plt.grid(True)
+plt.show()
+```
+
